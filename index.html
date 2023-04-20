@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/encriptador.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <nav>
+      <label>Encriptador</label>
+    </nav>
+    <div class="container">
+      <div>
+        <img id="imagen" src="./assets/img/hacker.png" />
+      </div>
+      <div id="input-text">
+        <textarea id="text-area" placeholder="Escribe tu mensaje"></textarea>
+      </div>
+      <div id="buttons">
+        <button onclick="encriptar()">
+          <strong>Encriptar</strong>
+        </button>
+        <button onclick="desEncriptar()">
+          <strong>Desencriptar</strong>
+        </button>
+        <h6>
+          * No se permiten letras mayúsculas, acentos ni caracteres especiales
+        </h6>
+      </div>
+      <div id="output-text">
+        <textarea id="text-output"></textarea>
+      </div>
+      <div>
+        <button onclick="copiar()">
+          <strong>Copiar mensaje</strong>
+        </button>
+      </div>
+      <div>
+        <button onclick="nuevo()">
+          <strong>Limpiar</strong>
+        </button>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <a href="https://m.me/gabriel.arturo.52" target="_blanck"
+          ><img id="icono" src="./assets/img/facebook.png"
+        /></a>
+        <a href="https://github.com/ArturoCarmona" target="_blanck"
+          ><img id="icono" src="./assets/img/github.png"
+        /></a>
+        <a href="https://www.instagram.com/gaboturo/" target="_blanck"
+          ><img id="icono" src="./assets/img/instagram.png"
+        /></a>
+        <a href="https://www.linkedin.com/in/garturogc/" target="_blanck"
+          ><img id="icono" src="./assets/img/linkedin.png"
+        /></a>
+      </div>
+      <div>
+        <p>&copy; All rights reserviced</p>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="./components/encriptador.js"></script>
+  </body>
+</html>
